@@ -26,14 +26,14 @@ The results obtained from clustering with the whole datasets are shown below <br
 
 ### Data preprocessing 
 For the the rest of the tasks we need to do data processin. During the data preprocessing phase, we made several decisions to correctly input data to our model. 
-1. Dimensionality Reduction <br>
+1. **Dimensionality Reduction** <br>
 We initially approach the dataset by removing JUNCTION_DETAIL because it has the same value replicated in all the rows.
 Secondly, we produced the Correlation matrix to check if there were columns highly correlated. 
-2. Feature extraction
+2. **Feature extraction** <br>
 The dataset presents a lot of categorical features; we decided to deal with such categories by encoding them using the One-Hot-Encoding algorithm. We faced a problem related to the dimension of our dataset: preserving all the different values for each column would have led us to obtain a dataset with a very high number of columns and such a high dimensionality wouldn’t be suitable for our analysis. So, we invested time in transforming the feature’s values in order to achieve better matrix dimensions
-3. Feature Conversion
+3. **Feature Conversion** <br>
 The dataset presents some columns that should be categories but are represented by numeric values. If we don’t handle these exceptions, the column would preserve order between the categories and since there is not a meaningful order, we needed to modify them and an efficient way to achieve this is to cast the column to string.
-4. Feature Transformation – One-Hot-Encoding <br> 
+4. Feature Transformation – **One-Hot-Encoding** <br> 
 
 Now that we have finally decided the features that we will use to train the model, we have to represent them in the correct way and we have two different choices, mapping each category to a number or adding dimension to the table to equally distribute the features into the n-dimensional space. We used the second approach because the first one presupposes a natural order between the features, and for most of them, this is not the case. All the assumptions made in the Feature Extraction step are crucial for modeling a bigger dimensional data frame.
 
