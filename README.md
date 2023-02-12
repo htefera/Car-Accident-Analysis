@@ -1,3 +1,8 @@
-# London Car Accident Analysis project
+## London Car Accident Analysis
 ## Obective 
-Analysis of accident hotspots, identification of factors that lead to accident causes, and development of a predictive model of fatal accidents using Python, Google Colab, and Google Maps services
+The goal of the project is to analyze accident hotspots, identify factors that lead to accident causes, and develop a predictive model to identify fatal accidents. 
+
+## Tools
+
+Python, Google Colab, and Google Maps services
+
