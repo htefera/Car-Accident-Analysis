@@ -40,7 +40,9 @@ Now that we have finally decided the features that we will use to train the mode
 
 ## Detecting patterns that lead to Fatal accidents using Association rules
 
+To detect patterns and correlations to the features that often lead to a fatal accident, we used association rules. The goal of this experiment was to obtain features or a combination of features that imply fatal accidents. Because of the size of the given dataset, we used the FP Growth algorithm which is faster than the simple Apriori algorithm.
 
+Before applying the association rules algorithm, we had to preprocess the dataset. we applied the transformations that are mentioned above
 
 ## Creating a model that predicts Fatal accidents
 We tried to apply many algorithms and techniques in order to predict whether a fatal accident is going to happen by using the given traffic conditions. We experimented with many classifiers as well as many different techniques to tackle the problem of imbalance of the classes. We concluded that we took the best results by downsampling the dataset and by using Random forest and SVM classifiers. Regarding the SVM, we used the SGDClassifier from sklearn library which is a classic linear classifier with stochastic gradient descent (SGD) training.
