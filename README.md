@@ -20,7 +20,7 @@ In order to obtain the hotspots for car accidents (i.e.: those places where a co
 
 When trying to use DBSCAN on a large number of points (in this case, almost 500000), we can face problems of performance or excessive use of memory (resulting in Memory Errors in Python). These problems were avoided by changing the data type of the latitude and longitude coordinates in our data frames from 64 bits floats to 32 bits floats.<br>
 The results obtained from clustering with the whole datasets are shown below <br>
-![](hotspot.png)   ![](hotspot3.png)
+![](Images/hotspot.png)   ![](Images/hotspot3.png)
 
 
 As can be seen, the hotspots are mainly located in cities, as any kind of accident is more prone to occur in places where more people are (and therefore use vehicles).
