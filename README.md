@@ -85,7 +85,7 @@ In the second case, we merged the Serious and the Fatal accidents because we ass
 
 Dataset 1 contains approximately 10.000 points and dataset 2 contains 150.000.
 
-![](Images/classificationresults.png)
+![](Images/classisificationresults.png)
 
 
 
