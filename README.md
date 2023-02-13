@@ -23,6 +23,10 @@ The results obtained from clustering with the whole datasets are shown below <br
 ![](hotspot.png)   ![](hotspot3.png)
 
 
+As can be seen, the hotspots are mainly located in cities, as any kind of accident is more prone to occur in places where more people are (and therefore use vehicles).
+
+
+
 
 ### Data preprocessing 
 For the the rest of the tasks we need to do data processin. During the data preprocessing phase, we made several decisions to correctly input data to our model. 
