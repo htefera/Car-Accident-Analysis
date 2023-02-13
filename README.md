@@ -83,9 +83,15 @@ In the next two tables, we are comparing the results of both classifiers in two 
 In the second case, we merged the Serious and the Fatal accidents because we assumed that both categories are referring to accidents that a government would like to reduce. This means that if an accident is Serious is “closer” to a Fatal, as people got seriously injured (otherwise it would be a Slight one) and that is why we are considering them as being the same class. <br>
 
 
-Dataset 1 contains approximately 10.000 points and dataset 2 contains 150.000.
+Dataset 1 contains approximately 10.000 points and dataset 2 contains 150.000. <br>
 
 ![](Images/classisificationresults.png)
+
+
+
+We can see from the above results that we generally get a low accuracy, a high recall, a medium precision, and an F-measure.These results are reasonable, as the classes that our algorithms are predicting are not of the same importance. This means that if our predictions are not correct regarding a slight accident, it is not the same as being wrong about a fatal one. That is why we do not take accuracy into consideration. <br>
+
+On the other hand, recall is a very important measure for us. When we have high recall, taking into consideration that the positive class in the above tables is fatal accidents, it means that we do not have a lot of False-Positives (FP). In our case, False-Positives are the accidents that are fatal, and we predict them as slight or serious. We strongly want to avoid such mistakes, as we want to prevent fatal accidents (high recall), but we can tolerate having more True-Negative, which means that we predict some slight or serious accidents as fatal (medium precision).
 
 
 
