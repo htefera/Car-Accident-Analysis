@@ -43,6 +43,11 @@ The following is the detailed map where fatal accidents occur <br>
 
 
 
+In the second case, where **Epsilon = 0.005 and min_pts = 25**, besides clusters in UK cities, we can also find certain roads which are outstandingly dangerous, having a handful of fatal accidents spread over a reduced number of kilometers.
+
+
+
+
 ### Data preprocessing 
 For the the rest of the tasks we need to do data processin. During the data preprocessing phase, we made several decisions to correctly input data to our model. 
 1. **Dimensionality Reduction** <br>
