@@ -72,4 +72,8 @@ To detect patterns and correlations to the features that often lead to a fatal a
 Before applying the association rules algorithm, we had to preprocess the dataset. we applied the transformations that are mentioned above
 
 ## Creating a model that predicts fatal accidents
-We tried to apply many algorithms and techniques in order to predict whether a fatal accident is going to happen by using the given traffic conditions. We experimented with many classifiers as well as many different techniques to tackle the problem of imbalance of the classes. We concluded that we took the best results by downsampling the dataset and by using Random forest and SVM classifiers. Regarding the SVM, we used the SGDClassifier from sklearn library which is a classic linear classifier with stochastic gradient descent (SGD) training.
+We tried to apply many algorithms and techniques in order to predict whether a fatal accident is going to happen by using the given traffic conditions.
+
+### Classification with downsampling
+
+We experimented with many classifiers as well as many different techniques to tackle the problem of imbalance of the classes. We concluded that we took the best results by downsampling the dataset and by using Random forest and SVM classifiers. Regarding the SVM, we used the SGDClassifier from sklearn library which is a classic linear classifier with stochastic gradient descent (SGD) training.
