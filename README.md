@@ -30,7 +30,7 @@ As can be seen, the hotspots are mainly located in cities, as any kind of accide
 Fatal accidents hotspots can be more interesting to be studied, as it can help to improve the road conditions on those spots or to conduct more specific studies in order to reduce the number of casualties in the most dangerous places. For this reason, we conducted another clustering in which only fatal accidents were taken into account. <br>
 
 Besides, in order to give more importance to accidents in which more casualties occur, the points were multiplied by the number of casualties in the accidents, so that a small number of accidents whose total number of casualties was larger than the min_pts parameter would be considered as a hotspot. Two different sets of parameters were used
-* Epsilon = 0.01 and min_pts = 50
+* Epsilon = 0.01 and min_pts = 50%MCEPASTEBIN%
 * Epsilon = 0.005 and min_pts = 25
 
 In the first case, clusters in most of the cities in the UK were found. By the results obtained, it can be seen that there are cities that are safer than others (v.g.: Cardiff does not have a cluster of fatal accidents). <br>
@@ -51,8 +51,8 @@ The following are the detailed maps for the fatal accidents, with reduced kilome
 ![](Images/eps0005_mpts_20_detail2.png)
 ![](Images/eps0005_mpts_20_detail2.png)
 
-### Data preprocessing 
-For the the rest of the tasks we need to do data processin. During the data preprocessing phase, we made several decisions to correctly input data to our model. 
+## Data preprocessing 
+For detecting patterns that lead to fatal accidents and creating a model that predicts fatal accidents, we need to do data processing. We made several decisions to correctly input data to our model. 
 1. **Dimensionality Reduction** <br>
 We initially approach the dataset by removing JUNCTION_DETAIL because it has the same value replicated in all the rows.
 Secondly, we produced the Correlation matrix to check if there were columns highly correlated. 
@@ -65,11 +65,11 @@ The dataset presents some columns that should be categories but are represented 
 Now that we have finally decided the features that we will use to train the model, we have to represent them in the correct way and we have two different choices, mapping each category to a number or adding dimension to the table to equally distribute the features into the n-dimensional space. We used the second approach because the first one presupposes a natural order between the features, and for most of them, this is not the case. All the assumptions made in the Feature Extraction step are crucial for modeling a bigger dimensional data frame.
 
 
-## Detecting patterns that lead to Fatal accidents using Association rules
+## Detecting patterns that lead to Fatal accidents using association rules
 
 To detect patterns and correlations to the features that often lead to a fatal accident, we used association rules. The goal of this experiment was to obtain features or a combination of features that imply fatal accidents. Because of the size of the given dataset, we used the FP Growth algorithm which is faster than the simple Apriori algorithm.
 
 Before applying the association rules algorithm, we had to preprocess the dataset. we applied the transformations that are mentioned above
 
-## Creating a model that predicts Fatal accidents
+## Creating a model that predicts fatal accidents
 We tried to apply many algorithms and techniques in order to predict whether a fatal accident is going to happen by using the given traffic conditions. We experimented with many classifiers as well as many different techniques to tackle the problem of imbalance of the classes. We concluded that we took the best results by downsampling the dataset and by using Random forest and SVM classifiers. Regarding the SVM, we used the SGDClassifier from sklearn library which is a classic linear classifier with stochastic gradient descent (SGD) training.
