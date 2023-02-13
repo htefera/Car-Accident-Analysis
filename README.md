@@ -20,10 +20,23 @@ In order to obtain the hotspots for car accidents (i.e.: those places where a co
 
 When trying to use DBSCAN on a large number of points (in this case, almost 500000), we can face problems of performance or excessive use of memory (resulting in Memory Errors in Python). These problems were avoided by changing the data type of the latitude and longitude coordinates in our data frames from 64 bits floats to 32 bits floats.<br>
 The results obtained from clustering with the whole datasets are shown below <br>
-![](Images/hotspot.png)   ![](Images/hotspot3.png)
+![](hotspot.png)   ![](hotspot3.png)
 
 
 As can be seen, the hotspots are mainly located in cities, as any kind of accident is more prone to occur in places where more people are (and therefore use vehicles).
+
+## Identifying Fatal Accidents 
+
+Fatal accidents hotspots can be more interesting to be studied, as it can help to improve the road conditions on those spots or to conduct more specific studies in order to reduce the number of casualties in the most dangerous places. For this reason, we conducted another clustering in which only fatal accidents were taken into account. <br>
+
+Besides, in order to give more importance to accidents in which more casualties occur, the points were multiplied by the number of casualties in the accidents, so that a small number of accidents whose total number of casualties was larger than the min_pts parameter would be considered as a hotspot. Two different sets of parameters were used
+* Epsilon = 0.01 and min_pts = 50
+* Epsilon = 0.005 and min_pts = 25
+
+In the first case, clusters in most of the cities in the UK were found (Figures N3 and N4). By the results obtained, it can be seen that there are cities that are safer than others (v.g.: Cardiff does not have a cluster of fatal accidents).
+
+
+
 
 
 
