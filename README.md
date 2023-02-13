@@ -33,11 +33,13 @@ Besides, in order to give more importance to accidents in which more casualties 
 * Epsilon = 0.01 and min_pts = 50
 * Epsilon = 0.005 and min_pts = 25
 
-In the first case, clusters in most of the cities in the UK were found (Figures N3 and N4). By the results obtained, it can be seen that there are cities that are safer than others (v.g.: Cardiff does not have a cluster of fatal accidents).
+In the first case, clusters in most of the cities in the UK were found. By the results obtained, it can be seen that there are cities that are safer than others (v.g.: Cardiff does not have a cluster of fatal accidents). <br>
 
+![](Images/eps0.01_minpts50.png)
 
+The following is the detailed map where fatal accidents occur <br>
 
-
+![](Images/eps0.01minpts50_detail.png)
 
 
 
