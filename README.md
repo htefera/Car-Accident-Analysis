@@ -92,7 +92,7 @@ Fatal metrics considering 2 types of accidents:  slightly or more serious one <b
 
 We can see from the above results that we generally get a low accuracy, a high recall, a medium precision, and an F-measure.These results are reasonable, as the classes that our algorithms are predicting are not of the same importance. This means that if our predictions are not correct regarding a slight accident, it is not the same as being wrong about a fatal one. That is why we do not take accuracy into consideration. <br>
 
-On the other hand, recall is a very important measure for us. When we have high recall, taking into consideration that the positive class in the above tables is fatal accidents, it means that we do not have a lot of False-Positives (FP). In our case, False-Positives are the accidents that are fatal, and we predict them as slight or serious. We strongly want to avoid such mistakes, as we want to prevent fatal accidents (high recall), but we can tolerate having more True-Negative, which means that we predict some slight or serious accidents as fatal (medium precision).
+On the other hand, recall is a very important measure. When we have high recall, taking into consideration that the positive class in the above tables is fatal accidents, it means that we do not have a lot of False-Positives (FP). In our case, False-Positives are the accidents that are fatal, and we predict them as slight or serious. We strongly want to avoid such mistakes, as we want to prevent fatal accidents (high recall), but we can tolerate having more True-Negative, which means that we predict some slight or serious accidents as fatal (medium precision).
 
 ## Tuning classifier hyperparameters using GridSearchCV
 
