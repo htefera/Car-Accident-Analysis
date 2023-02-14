@@ -93,5 +93,9 @@ We can see from the above results that we generally get a low accuracy, a high r
 
 On the other hand, recall is a very important measure for us. When we have high recall, taking into consideration that the positive class in the above tables is fatal accidents, it means that we do not have a lot of False-Positives (FP). In our case, False-Positives are the accidents that are fatal, and we predict them as slight or serious. We strongly want to avoid such mistakes, as we want to prevent fatal accidents (high recall), but we can tolerate having more True-Negative, which means that we predict some slight or serious accidents as fatal (medium precision).
 
+## Tuning the classifiers using hyperparameter using GridSearchCV 
+
+To find the hyperparameters that give the best performance to the classifiers, we used a Grid Search method. This algorithm basically exhaustively searches over specified parameter values to find the best performance of an estimator. Finally, the best hyperparameter found by the Grid Search was used in our experiments.
+
 
 
