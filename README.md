@@ -60,7 +60,7 @@ Secondly, we produced the Correlation matrix to check if there were columns high
 The dataset presents a lot of categorical features; we decided to deal with such categories by encoding them using the One-Hot-Encoding algorithm. We faced a problem related to the dimension of our dataset: preserving all the different values for each column would have led us to obtain a dataset with a very high number of columns and such a high dimensionality wouldn’t be suitable for our analysis. So, we invested time in transforming the feature’s values in order to achieve better matrix dimensions
 3. **Feature Conversion** <br>
 The dataset presents some columns that should be categories but are represented by numeric values. If we don’t handle these exceptions, the column would preserve order between the categories and since there is not a meaningful order, we needed to modify them and an efficient way to achieve this is to cast the column to string.
-4. Feature Transformation – **One-Hot-Encoding** <br> 
+4. **Feature Transformation **– **One-Hot-Encoding** <br> 
 
 Now that we have finally decided the features that we will use to train the model, we have to represent them in the correct way and we have two different choices, mapping each category to a number or adding dimension to the table to equally distribute the features into the n-dimensional space. We used the second approach because the first one presupposes a natural order between the features, and for most of them, this is not the case. All the assumptions made in the Feature Extraction step are crucial for modeling a bigger dimensional data frame.
 
@@ -96,7 +96,7 @@ We can see from the above results that we generally get a low accuracy, a high r
 
 On the other hand, recall is a very important measure. When we have high recall, taking into consideration that the positive class in the above tables is fatal accidents, it means that we do not have a lot of False-Positives (FP). In our case, False-Positives are the accidents that are fatal, and we predict them as slight or serious. We strongly want to avoid such mistakes, as we want to prevent fatal accidents (high recall), but we can tolerate having more True-Negative, which means that we predict some slight or serious accidents as fatal (medium precision).
 
-## Tuning classifier hyperparameters using GridSearchCV
+### Tuning the hyperparameters using GridSearchCV
 
 To find the hyperparameters that give the best performance to the classifiers, we used a Grid Search method. This algorithm basically exhaustively searches over specified parameter values to find the best performance of an estimator. Finally, the best hyperparameter found by the Grid Search was used in our experiments.
 
