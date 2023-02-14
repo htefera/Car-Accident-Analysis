@@ -69,9 +69,9 @@ Now that we have finally decided the features that we will use to train the mode
 
 The goal is to detect patterns that lead to fatal accidents using association rules. To detect patterns and correlations to the features that often lead to a fatal accident, we used association rules. The goal of this experiment was to obtain features or a combination of features that imply fatal accidents. Because of the size of the given dataset, we used the FP Growth algorithm which is faster than the simple Apriori algorithm.
 
-For determining association rules using FP-Growith the data preprocessing slightly changed.  There is no one-hot-encoding. In addition, we made values renaming.  Furthermore, we performed class imbalance and downsampling
+For determining association rules using FP-Growith the data preprocessing slightly changed.  There is no one-hot-encoding. In addition, we made values renaming.  Furthermore, we performed class imbalance and downsampling <br>
 
-
+![](Images/dataprocessing.png)
 
 ## Creating a model that predicts fatal accidents
 We tried to apply many algorithms and techniques in order to predict whether a fatal accident is going to happen by using the given traffic conditions.
