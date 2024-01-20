@@ -1,4 +1,4 @@
-# Car Accident Analysis in the UK
+# Predictive Analytics for Road Saftey
 ## Obective 
 The goal of the project is to analyze accident hotspots, identify factors that lead to fatal accident, and develop a predictive model to identify fatal accidents. Given a dataset containing near half a million records of accidents that occurred between 2012 and 2014 in the UK, the goal was to obtain insights regarding three areas:
  
