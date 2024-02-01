@@ -9,7 +9,7 @@ The goal is to analyze accident hotspots, identify factors that lead to fatal ac
 
 ## Tools
 
-Python, Google Colab, and Google Maps services
+Python, Google Colab, Git, and Google Maps services
 
 ## Data 
 UK government amassed traffic data from 2012 and 2014
