@@ -20,7 +20,7 @@ To obtain the hotspots for car accidents (i.e.: those places where a considerabl
 
 When trying to use DBSCAN on a large number of points (in this case, almost 500000), we can face problems of performance or excessive use of memory (resulting in Memory Errors in Python). These problems were avoided by changing the data type of the latitude and longitude coordinates in our data frames from 64-bit floats to 32-bit floats.<br>
 The results obtained from clustering with the whole datasets are shown below <br>
-![](Images/hotspot.png)   ![](Images/hotspot3.png)
+![](Results/hotspot.png)   ![](Results/hotspot3.png)
 
 
 As can be seen, the hotspots are mainly located in cities, as any kind of accident is more prone to occur in places where more people are (and therefore use vehicles).
@@ -35,11 +35,11 @@ Besides, to give more importance to accidents in which more casualties occur, th
 
 In the first case, clusters in most of the cities in the UK were found. By the results obtained, it can be seen that there are cities that are safer than others (e.g.: Cardiff does not have a cluster of fatal accidents). <br>
 
-![](Images/eps0.01_minpts50.png)
+![](Results/eps0.01_minpts50.png)
 
 The following is the detailed map where fatal accidents occur <br>
 
-![](Images/eps0.01minpts50_detail.png)
+![](Results/eps0.01minpts50_detail.png)
 
 
 
@@ -47,9 +47,9 @@ In the second case, where **Epsilon = 0.005 and min_pts = 25**, besides clusters
 
 The following are the detailed maps for the fatal accidents, with reduced kilometers from London.
 
-![](Images/eps0005_mpts_20_detail1.png)
-![](Images/eps0005_mpts_20_detail2.png)
-![](Images/eps0005_mpts_20_detail2.png)
+![](Results/eps0005_mpts_20_detail1.png)
+![](Results/eps0005_mpts_20_detail2.png)
+![](Results/eps0005_mpts_20_detail2.png)
 
 ## Data preprocessing 
 For detecting patterns that lead to fatal accidents and creating a model that predicts fatal accidents, we need to do data processing. We made several decisions to correctly input data into our model. 
@@ -71,7 +71,7 @@ The goal is to detect patterns that lead to fatal accidents using association ru
 
 For determining association rules using FP-Growith the data preprocessing slightly changed.  There is no one-hot-encoding. In addition, we made values renaming.  Furthermore, we performed class imbalance and downsampling <br>
 
-![](Images/dataprocessing.png)
+![](Results/dataprocessing.png)
 
 ## Creating a model that predicts fatal accidents
 We tried to apply many algorithms and techniques to predict whether a fatal accident is going to happen by using the given traffic conditions.
@@ -84,10 +84,10 @@ In the next two tables, we are comparing the results of both classifiers in two 
  
 
 Fatal metrics consider 3 different types of accidents. These are Slight, Serious, and Fatal. <br>
-![](Images/accident1.png)
+![](Results/accident1.png)
 
 Fatal metrics considering 2 types of accidents:  slightly or more serious one <br>
-![](Images/accident2.png)
+![](Results/accident2.png)
 
 
 
@@ -100,5 +100,11 @@ On the other hand, recall is a very important measure. When we have high recall,
 
 To find the hyperparameters that give the best performance to the classifiers, we used a Grid Search method. This algorithm exhaustively searches over specified parameter values to find the best performance of an estimator. Finally, the best hyperparameter found by the Grid Search was used in our experiments.
 
-
+### Project Structure 
+**Association Rules:**: Contain Code artifact for associate rule mining
+**Classification:**: Contain code for predicting whether a set of conditions would lead to an accident
+**HotSpot:** Code for identifying accident hotspot
+**Results:**: Store simulations results
+**Sampling:**:Code for data processing logic 
+**Report:** Contain project report
 
