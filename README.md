@@ -101,10 +101,11 @@ On the other hand, recall is a very important measure. When we have high recall,
 To find the hyperparameters that give the best performance to the classifiers, we used a Grid Search method. This algorithm exhaustively searches over specified parameter values to find the best performance of an estimator. Finally, the best hyperparameter found by the Grid Search was used in our experiments.
 
 ### Project Structure 
-**Association Rules:**: Contain Code artifact for associate rule mining
-**Classification:**: Contain code for predicting whether a set of conditions would lead to an accident
-**HotSpot:** Code for identifying accident hotspot
-**Results:**: Store simulations results
-**Sampling:**:Code for data processing logic 
-**Report:** Contain project report
+1. **Association Rules:**: Contain Code artifact for associate rule mining
+2. **Classification:**: Contain code for predicting whether a set of conditions would lead to an accident
+3. **HotSpot:** Code for identifying accident hotspot
+4. **Results:**: Store simulations results
+5. **Sampling:**:Code for data processing logic
+6. **Report:** Contain project report
+
 
