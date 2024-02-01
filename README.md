@@ -1,4 +1,4 @@
-# Predictive Model for Road Saftey
+# Accident Data Analysis for Road Safety
 ## Objective 
 The goal is to analyze accident hotspots, identify factors that lead to fatal accidents, and develop a predictive model to identify fatal accidents. Given a dataset containing nearly half a million records of accidents that occurred between 2012 and 2014 in the UK, the goal was to obtain insights regarding three areas:
  
